@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="/Resident Evil/Resident-Evil-Logo.jpg">
+  <title>Resident Evil Játékok</title>
+  <link rel="stylesheet" href="/Resident Evil/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Resident Evil Játékok</h1>
+    <p>Kattints egy játék címére a leírásért!</p>
+
+    <div class="auth-buttons">
+      <button class="auth-btn" onclick="openModal('login')">Bejelentkezés</button>
+      <button class="auth-btn" onclick="openModal('register')">Regisztráció</button>
+    </div>
+  </header>
+
+  <div class="container">
+
+  <!-- New Card  -->
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Resident Evil 0</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> <img src="./R0.jpg" alt="Resident Evil 0" class="resident"></p>
+        </div>
+    </div>
+</div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Resident Evil 1</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> <img src="./R1.jpg" alt="Resident Evil 1" class="resident"></p>
+        </div>
+    </div>
+</div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Resident Evil 2</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> <img src="./R2.jpg" alt="Resident Evil 2" class="resident"></p>
+        </div>
+    </div>
+</div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Resident Evil 3</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> <img src="./R3.jpg" alt="Resident Evil 3" class="resident"></p>
+        </div>
+    </div>
+</div>
+
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Resident Evil 4</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> <img src="./R4.jpg" alt="Resident Evil 4" class="resident"></p>
+        </div>
+    </div>
+</div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Resident Evil 5</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> <img src="./R5.jpg" alt="Resident Evil 5" class="resident"></p>
+        </div>
+    </div>
+</div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Resident Evil 6</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> <img src="./R6.png" alt="Resident Evil 6" class="resident"></p>
+        </div>
+    </div>
+</div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Resident Evil 7</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> <img src="./R7.jpg" alt="Resident Evil 7" class="resident"></p>
+        </div>
+    </div>
+</div>
+
+    <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Resident Evil 8</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> <img src="./R8.png" alt="Resident Evil 8" class="resident"></p>
+        </div>
+    </div>
+</div>
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <p class="title">Resident Evil Requiem</p>
+        </div>
+        <div class="flip-card-back">
+            <p class="title"> <img src="./R9.jpg" alt="Resident Evil 8" class="resident"></p>
+        </div>
+    </div>
+</div>
+  <!-- New card end -->
+  </div>
+
+  <!-- MODALOK -->
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('login')">×</span>
+      <h2>Bejelentkezés</h2>
+      <form>
+        <div class="form-group">
+          <label for="login-email">E-mail</label>
+          <input type="email" id="login-email" placeholder="neved@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Jelszó</label>
+          <input type="password" id="login-password" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn-submit">Bejelentkezés</button>
+        <div class="switch-link">
+          Nincs fiókod? <a href="#" onclick="switchModal('login','register'); return false;">Regisztrálj!</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('register')">×</span>
+      <h2>Regisztráció</h2>
+      <form>
+        <div class="form-group">
+          <label for="reg-name">Teljes név</label>
+          <input type="text" id="reg-name" placeholder="Kovács János" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">E-mail</label>
+          <input type="email" id="reg-email" placeholder="neved@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-password">Jelszó</label>
+          <input type="password" id="reg-password" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn-submit">Regisztrálok</button>
+        <div class="switch-link">
+          Már van fiókod? <a href="#" onclick="switchModal('register','login'); return false;">Bejelentkezés</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script src="/Resident Evil/script.js"></script>
+
+</body>
+</html>
